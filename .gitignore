@@ -6,3 +6,4 @@
 !.yarn/sdks
 !.yarn/versionsdist/
 dist/
+dev-local-proxy.json

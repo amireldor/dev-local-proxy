@@ -41,10 +41,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
               {
                 packageLocation: "./",
                 packageDependencies: [
-                  ["@sgarciac/bombadil", "npm:2.3.0"],
-                  ["@tsconfig/deno", "npm:1.0.5"],
-                  ["@tsconfig/recommended", "npm:1.0.1"],
+                  ["@tsconfig/node16", "npm:1.0.1"],
                   ["@types/express", "npm:4.17.12"],
+                  ["@types/node", "npm:15.12.4"],
                   ["arg", "npm:5.0.0"],
                   ["concurrently", "npm:6.2.0"],
                   ["express", "npm:4.17.1"],
@@ -138,27 +137,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         ],
         [
-          "@sgarciac/bombadil",
-          [
-            [
-              "npm:2.3.0",
-              {
-                packageLocation:
-                  "./.yarn/cache/@sgarciac-bombadil-npm-2.3.0-f9f39f52c3-5a1624a20a.zip/node_modules/@sgarciac/bombadil/",
-                packageDependencies: [
-                  ["@sgarciac/bombadil", "npm:2.3.0"],
-                  ["chevrotain", "npm:4.8.1"],
-                  ["lodash.every", "npm:4.6.0"],
-                  ["lodash.includes", "npm:4.3.0"],
-                  ["lodash.last", "npm:3.0.0"],
-                  ["moment", "npm:2.29.1"],
-                ],
-                linkType: "HARD",
-              },
-            ],
-          ],
-        ],
-        [
           "@sindresorhus/is",
           [
             [
@@ -204,28 +182,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         ],
         [
-          "@tsconfig/deno",
-          [
-            [
-              "npm:1.0.5",
-              {
-                packageLocation:
-                  "./.yarn/cache/@tsconfig-deno-npm-1.0.5-95f2d68dfa-a9f2be20cd.zip/node_modules/@tsconfig/deno/",
-                packageDependencies: [["@tsconfig/deno", "npm:1.0.5"]],
-                linkType: "HARD",
-              },
-            ],
-          ],
-        ],
-        [
-          "@tsconfig/recommended",
+          "@tsconfig/node16",
           [
             [
               "npm:1.0.1",
               {
                 packageLocation:
-                  "./.yarn/cache/@tsconfig-recommended-npm-1.0.1-d9691faba9-5510ca1342.zip/node_modules/@tsconfig/recommended/",
-                packageDependencies: [["@tsconfig/recommended", "npm:1.0.1"]],
+                  "./.yarn/cache/@tsconfig-node16-npm-1.0.1-0fb4cd7d44-c389a4a81c.zip/node_modules/@tsconfig/node16/",
+                packageDependencies: [["@tsconfig/node16", "npm:1.0.1"]],
                 linkType: "HARD",
               },
             ],
@@ -1008,23 +972,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         ],
         [
-          "chevrotain",
-          [
-            [
-              "npm:4.8.1",
-              {
-                packageLocation:
-                  "./.yarn/cache/chevrotain-npm-4.8.1-901241ba62-f68b1b63f6.zip/node_modules/chevrotain/",
-                packageDependencies: [
-                  ["chevrotain", "npm:4.8.1"],
-                  ["regexp-to-ast", "npm:0.4.0"],
-                ],
-                linkType: "HARD",
-              },
-            ],
-          ],
-        ],
-        [
           "chokidar",
           [
             [
@@ -1583,10 +1530,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                 packageLocation: "./",
                 packageDependencies: [
                   ["dev-local-proxy", "workspace:."],
-                  ["@sgarciac/bombadil", "npm:2.3.0"],
-                  ["@tsconfig/deno", "npm:1.0.5"],
-                  ["@tsconfig/recommended", "npm:1.0.1"],
+                  ["@tsconfig/node16", "npm:1.0.1"],
                   ["@types/express", "npm:4.17.12"],
+                  ["@types/node", "npm:15.12.4"],
                   ["arg", "npm:5.0.0"],
                   ["concurrently", "npm:6.2.0"],
                   ["express", "npm:4.17.1"],
@@ -3188,48 +3134,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         ],
         [
-          "lodash.every",
-          [
-            [
-              "npm:4.6.0",
-              {
-                packageLocation:
-                  "./.yarn/cache/lodash.every-npm-4.6.0-bea415bd43-fed366d044.zip/node_modules/lodash.every/",
-                packageDependencies: [["lodash.every", "npm:4.6.0"]],
-                linkType: "HARD",
-              },
-            ],
-          ],
-        ],
-        [
-          "lodash.includes",
-          [
-            [
-              "npm:4.3.0",
-              {
-                packageLocation:
-                  "./.yarn/cache/lodash.includes-npm-4.3.0-3a2f6fa22c-20d6b1bf78.zip/node_modules/lodash.includes/",
-                packageDependencies: [["lodash.includes", "npm:4.3.0"]],
-                linkType: "HARD",
-              },
-            ],
-          ],
-        ],
-        [
-          "lodash.last",
-          [
-            [
-              "npm:3.0.0",
-              {
-                packageLocation:
-                  "./.yarn/cache/lodash.last-npm-3.0.0-87e0d22e86-108afff226.zip/node_modules/lodash.last/",
-                packageDependencies: [["lodash.last", "npm:3.0.0"]],
-                linkType: "HARD",
-              },
-            ],
-          ],
-        ],
-        [
           "lowercase-keys",
           [
             [
@@ -3627,20 +3531,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                 packageLocation:
                   "./.yarn/cache/mkdirp-npm-1.0.4-37f6ef56b9-1aa3a6a2d7.zip/node_modules/mkdirp/",
                 packageDependencies: [["mkdirp", "npm:1.0.4"]],
-                linkType: "HARD",
-              },
-            ],
-          ],
-        ],
-        [
-          "moment",
-          [
-            [
-              "npm:2.29.1",
-              {
-                packageLocation:
-                  "./.yarn/cache/moment-npm-2.29.1-787d9fdafd-86729013fe.zip/node_modules/moment/",
-                packageDependencies: [["moment", "npm:2.29.1"]],
                 linkType: "HARD",
               },
             ],
@@ -4538,20 +4428,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                   ["readdirp", "npm:3.6.0"],
                   ["picomatch", "npm:2.3.0"],
                 ],
-                linkType: "HARD",
-              },
-            ],
-          ],
-        ],
-        [
-          "regexp-to-ast",
-          [
-            [
-              "npm:0.4.0",
-              {
-                packageLocation:
-                  "./.yarn/cache/regexp-to-ast-npm-0.4.0-5af9e8065b-9304797145.zip/node_modules/regexp-to-ast/",
-                packageDependencies: [["regexp-to-ast", "npm:0.4.0"]],
                 linkType: "HARD",
               },
             ],
