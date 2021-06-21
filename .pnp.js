@@ -41,9 +41,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
               {
                 packageLocation: "./",
                 packageDependencies: [
+                  ["@sgarciac/bombadil", "npm:2.3.0"],
                   ["@tsconfig/deno", "npm:1.0.5"],
                   ["@tsconfig/recommended", "npm:1.0.1"],
                   ["@types/express", "npm:4.17.12"],
+                  ["arg", "npm:5.0.0"],
                   ["concurrently", "npm:6.2.0"],
                   ["express", "npm:4.17.1"],
                   ["http-proxy-middleware", "npm:2.0.0"],
@@ -55,7 +57,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                     "pretty-quick",
                     "virtual:792439ddd7fe88f01c68e46615b3a7650d27ef69b052a071621babbd5e36d7733d27a96f1d9c7cd85846b373805089059b1bcf1e0ed377802d8642d5844dfb7c#npm:3.1.1",
                   ],
-                  ["toml", "npm:3.0.0"],
                   [
                     "typescript",
                     "patch:typescript@npm%3A4.3.4#builtin<compat/typescript>::version=4.3.4&hash=ddfc1b",
@@ -130,6 +131,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                   ["@npmcli/move-file", "npm:1.1.2"],
                   ["mkdirp", "npm:1.0.4"],
                   ["rimraf", "npm:3.0.2"],
+                ],
+                linkType: "HARD",
+              },
+            ],
+          ],
+        ],
+        [
+          "@sgarciac/bombadil",
+          [
+            [
+              "npm:2.3.0",
+              {
+                packageLocation:
+                  "./.yarn/cache/@sgarciac-bombadil-npm-2.3.0-f9f39f52c3-5a1624a20a.zip/node_modules/@sgarciac/bombadil/",
+                packageDependencies: [
+                  ["@sgarciac/bombadil", "npm:2.3.0"],
+                  ["chevrotain", "npm:4.8.1"],
+                  ["lodash.every", "npm:4.6.0"],
+                  ["lodash.includes", "npm:4.3.0"],
+                  ["lodash.last", "npm:3.0.0"],
+                  ["moment", "npm:2.29.1"],
                 ],
                 linkType: "HARD",
               },
@@ -668,6 +690,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         ],
         [
+          "arg",
+          [
+            [
+              "npm:5.0.0",
+              {
+                packageLocation:
+                  "./.yarn/cache/arg-npm-5.0.0-143074efee-d5e270723c.zip/node_modules/arg/",
+                packageDependencies: [["arg", "npm:5.0.0"]],
+                linkType: "HARD",
+              },
+            ],
+          ],
+        ],
+        [
           "array-differ",
           [
             [
@@ -965,6 +1001,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                   ["chalk", "npm:4.1.1"],
                   ["ansi-styles", "npm:4.3.0"],
                   ["supports-color", "npm:7.2.0"],
+                ],
+                linkType: "HARD",
+              },
+            ],
+          ],
+        ],
+        [
+          "chevrotain",
+          [
+            [
+              "npm:4.8.1",
+              {
+                packageLocation:
+                  "./.yarn/cache/chevrotain-npm-4.8.1-901241ba62-f68b1b63f6.zip/node_modules/chevrotain/",
+                packageDependencies: [
+                  ["chevrotain", "npm:4.8.1"],
+                  ["regexp-to-ast", "npm:0.4.0"],
                 ],
                 linkType: "HARD",
               },
@@ -1530,9 +1583,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                 packageLocation: "./",
                 packageDependencies: [
                   ["dev-local-proxy", "workspace:."],
+                  ["@sgarciac/bombadil", "npm:2.3.0"],
                   ["@tsconfig/deno", "npm:1.0.5"],
                   ["@tsconfig/recommended", "npm:1.0.1"],
                   ["@types/express", "npm:4.17.12"],
+                  ["arg", "npm:5.0.0"],
                   ["concurrently", "npm:6.2.0"],
                   ["express", "npm:4.17.1"],
                   ["http-proxy-middleware", "npm:2.0.0"],
@@ -1544,7 +1599,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                     "pretty-quick",
                     "virtual:792439ddd7fe88f01c68e46615b3a7650d27ef69b052a071621babbd5e36d7733d27a96f1d9c7cd85846b373805089059b1bcf1e0ed377802d8642d5844dfb7c#npm:3.1.1",
                   ],
-                  ["toml", "npm:3.0.0"],
                   [
                     "typescript",
                     "patch:typescript@npm%3A4.3.4#builtin<compat/typescript>::version=4.3.4&hash=ddfc1b",
@@ -3134,6 +3188,48 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         ],
         [
+          "lodash.every",
+          [
+            [
+              "npm:4.6.0",
+              {
+                packageLocation:
+                  "./.yarn/cache/lodash.every-npm-4.6.0-bea415bd43-fed366d044.zip/node_modules/lodash.every/",
+                packageDependencies: [["lodash.every", "npm:4.6.0"]],
+                linkType: "HARD",
+              },
+            ],
+          ],
+        ],
+        [
+          "lodash.includes",
+          [
+            [
+              "npm:4.3.0",
+              {
+                packageLocation:
+                  "./.yarn/cache/lodash.includes-npm-4.3.0-3a2f6fa22c-20d6b1bf78.zip/node_modules/lodash.includes/",
+                packageDependencies: [["lodash.includes", "npm:4.3.0"]],
+                linkType: "HARD",
+              },
+            ],
+          ],
+        ],
+        [
+          "lodash.last",
+          [
+            [
+              "npm:3.0.0",
+              {
+                packageLocation:
+                  "./.yarn/cache/lodash.last-npm-3.0.0-87e0d22e86-108afff226.zip/node_modules/lodash.last/",
+                packageDependencies: [["lodash.last", "npm:3.0.0"]],
+                linkType: "HARD",
+              },
+            ],
+          ],
+        ],
+        [
           "lowercase-keys",
           [
             [
@@ -3531,6 +3627,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                 packageLocation:
                   "./.yarn/cache/mkdirp-npm-1.0.4-37f6ef56b9-1aa3a6a2d7.zip/node_modules/mkdirp/",
                 packageDependencies: [["mkdirp", "npm:1.0.4"]],
+                linkType: "HARD",
+              },
+            ],
+          ],
+        ],
+        [
+          "moment",
+          [
+            [
+              "npm:2.29.1",
+              {
+                packageLocation:
+                  "./.yarn/cache/moment-npm-2.29.1-787d9fdafd-86729013fe.zip/node_modules/moment/",
+                packageDependencies: [["moment", "npm:2.29.1"]],
                 linkType: "HARD",
               },
             ],
@@ -4434,6 +4544,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         ],
         [
+          "regexp-to-ast",
+          [
+            [
+              "npm:0.4.0",
+              {
+                packageLocation:
+                  "./.yarn/cache/regexp-to-ast-npm-0.4.0-5af9e8065b-9304797145.zip/node_modules/regexp-to-ast/",
+                packageDependencies: [["regexp-to-ast", "npm:0.4.0"]],
+                linkType: "HARD",
+              },
+            ],
+          ],
+        ],
+        [
           "registry-auth-token",
           [
             [
@@ -5224,20 +5348,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
                 packageLocation:
                   "./.yarn/cache/toidentifier-npm-1.0.0-5dad252f90-95720e8a0f.zip/node_modules/toidentifier/",
                 packageDependencies: [["toidentifier", "npm:1.0.0"]],
-                linkType: "HARD",
-              },
-            ],
-          ],
-        ],
-        [
-          "toml",
-          [
-            [
-              "npm:3.0.0",
-              {
-                packageLocation:
-                  "./.yarn/cache/toml-npm-3.0.0-f993270804-ae35b4c1d1.zip/node_modules/toml/",
-                packageDependencies: [["toml", "npm:3.0.0"]],
                 linkType: "HARD",
               },
             ],

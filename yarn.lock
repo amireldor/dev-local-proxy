@@ -42,6 +42,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sgarciac/bombadil@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "@sgarciac/bombadil@npm:2.3.0"
+  dependencies:
+    chevrotain: ^4.3.1
+    lodash.every: ^4.6.0
+    lodash.includes: ^4.3.0
+    lodash.last: ^3.0.0
+    moment: ^2.18.1
+  checksum: 5a1624a20a2f9cd6fce0a502dcee84a89e2acdd4b05c6b9db62f1b55778417af59d0de9105d2a3dcaeb9cb5863e00a53b38c3453689708814b95b276fe8dd6e7
+  languageName: node
+  linkType: hard
+
 "@sindresorhus/is@npm:^0.14.0":
   version: 0.14.0
   resolution: "@sindresorhus/is@npm:0.14.0"
@@ -329,6 +342,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"arg@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "arg@npm:5.0.0"
+  checksum: d5e270723c079fd841dce7e94669e037676b7960110dea244f3de21c935debe800528ac3a7c4c306c1159c8ad7f3eb19ef3e3650243ebd45dfcd69f4a8041a39
+  languageName: node
+  linkType: hard
+
 "array-differ@npm:^3.0.0":
   version: 3.0.0
   resolution: "array-differ@npm:3.0.0"
@@ -506,6 +526,15 @@ __metadata:
     ansi-styles: ^4.1.0
     supports-color: ^7.1.0
   checksum: 445c12db7aeed0046500a1e4184d31209a77d165654c885a789c41c8598a6a95bd2392180987cac572c967b93a2a730dda778bb7f87fa06ca63fd8592f8cc59f
+  languageName: node
+  linkType: hard
+
+"chevrotain@npm:^4.3.1":
+  version: 4.8.1
+  resolution: "chevrotain@npm:4.8.1"
+  dependencies:
+    regexp-to-ast: 0.4.0
+  checksum: f68b1b63f6a4f714b43e202cea8cb7a92af4e883122fc02947b6ce3683642eef304770514e98d8b58bd4957f4a0d21bd0b95615323a6306d9e544e9b43799396
   languageName: node
   linkType: hard
 
@@ -802,9 +831,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "dev-local-proxy@workspace:."
   dependencies:
+    "@sgarciac/bombadil": ^2.3.0
     "@tsconfig/deno": ^1.0.5
     "@tsconfig/recommended": ^1.0.1
     "@types/express": ^4.17.12
+    arg: ^5.0.0
     concurrently: ^6.2.0
     express: ^4.17.1
     http-proxy-middleware: ^2.0.0
@@ -813,7 +844,6 @@ __metadata:
     pinst: ^2.0.0
     prettier: 2.3.1
     pretty-quick: ^3.1.1
-    toml: ^3.0.0
     typescript: ^4.3.4
   languageName: unknown
   linkType: soft
@@ -1681,6 +1711,27 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"lodash.every@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "lodash.every@npm:4.6.0"
+  checksum: fed366d04487061d90653d9c705ffe540817926be75694ba1190d35eadc5c34bfcf51b09e235167330fd85bccc37668b4c7245e60fe9089c74ffbc75484335be
+  languageName: node
+  linkType: hard
+
+"lodash.includes@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "lodash.includes@npm:4.3.0"
+  checksum: 20d6b1bf7841a4eb21bcb124641a1d5fb368e3c86fb8834d80149ec92caef67f3bf316405e4ec309591f0a83e461cebb7b43b2b57d00fd45d1eb3009fe13be97
+  languageName: node
+  linkType: hard
+
+"lodash.last@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "lodash.last@npm:3.0.0"
+  checksum: 108afff226a1430bccc806c78c94c7231b78519c7df49b09aa7eb074baf8d1e1f272200e97230d816cd9b5370df7f08c7812840fa97f4d4b2bbcfd49b562d97e
+  languageName: node
+  linkType: hard
+
 "lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
@@ -1912,6 +1963,13 @@ fsevents@~2.3.2:
   bin:
     mkdirp: bin/cmd.js
   checksum: 1aa3a6a2d7514f094a91329ec09994f5d32d2955a4985ecbb3d86f2aaeafc4aa11521f98d606144c1d49cd9835004d9a73342709b8c692c92e59eacf37412468
+  languageName: node
+  linkType: hard
+
+"moment@npm:^2.18.1":
+  version: 2.29.1
+  resolution: "moment@npm:2.29.1"
+  checksum: 86729013febf7160de5b93da69273dd304d674b0224f9544b3abd09a87671ddd2cdd57598261ce57588910d63747ffd5590965e83c790d8bf327083c0e0a06e0
   languageName: node
   linkType: hard
 
@@ -2415,6 +2473,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"regexp-to-ast@npm:0.4.0":
+  version: 0.4.0
+  resolution: "regexp-to-ast@npm:0.4.0"
+  checksum: 93047971451f70fb24836cc5175fa738f484a2b077b409eb29141bc2d20ff6c25f8724c21432e91f1d3b112372c354ade709b5ce2bc29c1d2e52e879f198b49c
+  languageName: node
+  linkType: hard
+
 "registry-auth-token@npm:^4.0.0":
   version: 4.2.1
   resolution: "registry-auth-token@npm:4.2.1"
@@ -2880,13 +2945,6 @@ resolve@^1.10.0:
   version: 1.0.0
   resolution: "toidentifier@npm:1.0.0"
   checksum: 95720e8a0f98f1525f50ccbecbc2a23f0a1b4e448de03819dbbeda03adf0d2010fe64525fbc9d549765242550d341bb891672e4ac0b2cac58613cdd742324255
-  languageName: node
-  linkType: hard
-
-"toml@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "toml@npm:3.0.0"
-  checksum: ae35b4c1d1632207156157103ba91c4f6c1278185b143f758594263acc25a23a94dc75ff2ef8eb206605f683b4f09b953678e40893a03a84dfb0624e47b90ec6
   languageName: node
   linkType: hard
 
