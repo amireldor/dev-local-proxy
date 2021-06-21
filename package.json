@@ -1,0 +1,28 @@
+{
+  "name": "dev-local-proxy",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Amir Eldor <amir@eldor.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^2.0.0",
+    "toml": "^3.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/deno": "^1.0.5",
+    "@types/express": "^4.17.12",
+    "husky": "^6.0.0",
+    "nodemon": "^2.0.7",
+    "pinst": "^2.0.0",
+    "prettier": "2.3.1",
+    "pretty-quick": "^3.1.1",
+    "typescript": "^4.3.4"
+  },
+  "scripts": {
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
+    "dev": "nodemon -e ts -w src --exec 'tsc && node dist/index.js'"
+  }
+}
