@@ -1,5 +1,6 @@
 import express, { Request } from "express";
-import { createProxyMiddleware } from "http-proxy-middleware";
+import { createProxyMiddleware, RequestHandler } from "http-proxy-middleware";
+import { url } from "inspector";
 import { Socket } from "net";
 
 export interface AppRouteOptions {}
@@ -17,13 +18,18 @@ export interface AppConfig {
 
 export const createApp = (config: AppConfig) => {
   const app = express();
-  const proxies = Object.entries(config.routes).map(([pathname, route]) => {
-    return createProxyMiddleware(pathname, {
+  const proxies: Record<string, RequestHandler> = Object.entries(
+    config.routes
+  ).reduce((acc, entry) => {
+    const [pathname, route] = entry;
+    const proxy = createProxyMiddleware(pathname, {
       target: typeof route === "string" ? route : route.url,
       ws: true,
     });
-  });
-  proxies.forEach((proxy) => {
+    acc[pathname] = proxy;
+    return acc;
+  }, {} as Record<string, RequestHandler>);
+  Object.values(proxies).forEach((proxy) => {
     app.use(proxy);
   });
   return {
@@ -32,8 +38,15 @@ export const createApp = (config: AppConfig) => {
       console.log(`Will listen port ${hostname ? hostname + ":" : ""}${port}`);
       const server = app.listen(port, hostname!);
       server.on("upgrade", (req: Request, socket: Socket, head: any) => {
-        console.log("amir", req.hostname);
-        proxies[0].upgrade?.(req, socket, head);
+        const { url } = req;
+        const key = Object.keys(proxies).find(([pathname, _]) => {
+          return url.indexOf(pathname) === 0;
+        });
+        if (!key || !proxies[key]) {
+          console.error("No proxy for pathname", url);
+          return;
+        }
+        proxies[key].upgrade?.(req, socket, head);
       });
     },
   };
