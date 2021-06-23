@@ -1,6 +1,7 @@
 import arg from "arg";
 import fs from "fs";
 import { AppConfig, createApp } from "./server";
+import { configTemplate } from "./template";
 
 console.log("Hello!");
 
@@ -26,6 +27,13 @@ try {
 
 try {
   console.log(`Loading config from '${configFileName}'`);
+  if (!fs.existsSync(configFileName)) {
+    console.warn(
+      "Couldn't find that file :( creating a template for you (edit it!)"
+    );
+    fs.writeFileSync(configFileName, configTemplate);
+    process.exit(1);
+  }
   const contents = fs.readFileSync(configFileName, { encoding: "utf8" });
   const config = JSON.parse(contents);
   if (
