@@ -5,6 +5,8 @@ same URL. Useful for fixing CORS issues while developing your stuff.
 
 WebSockets support: ✔
 
+**Don't use this in prodcution! It's intended for local development only.**
+
 **Note**: This is just something I hacked in the middle of the night so it can
 be considered an "alpha" version. It seems to be working with my current game
 project with serving 2 frontends and 1 backend on my machine through the same
