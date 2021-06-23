@@ -12,8 +12,6 @@ try {
     // Types
     "--config": String,
     "-c": "--config",
-    "--port": Number,
-    "-p": "--port",
   });
 
   configFileName = args["--config"] ?? "dev-local-proxy.json";
@@ -57,7 +55,7 @@ try {
     process.exit(1);
   }
   const properConfig: AppConfig = {
-    port: args["--port"] ?? config.port ?? 3000,
+    port: config.port ?? 3000,
     hostname: config.hostname ?? null,
     routes: config.routes,
   };
