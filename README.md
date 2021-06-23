@@ -16,4 +16,4 @@ Inspiration that didn't work well for me: https://github.com/FND/dprox
 
 ## Development
 
-I think you should run `yarn dev`, then execute with `yarn node dist/index.js`. I'll try to pack it for normal npm install and usage, hopefully soon. I'm using yarn zero-installs for some reason. Wanted to give it a shot.
+I think you should run `yarn dev`, then execute with `yarn node dist/index.js`. I'll try to pack it for normal npm install and usage, hopefully soon. I'm using yarn zero-installs for some reason. I wanted to give it a shot. Sorry.
