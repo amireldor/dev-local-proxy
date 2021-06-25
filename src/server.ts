@@ -37,17 +37,6 @@ export const createApp = (config: AppConfig) => {
       const { port, hostname } = config;
       console.log(`Will listen port ${hostname ? hostname + ":" : ""}${port}`);
       const server = app.listen(port, hostname!);
-      server.on("upgrade", (req: Request, socket: Socket, head: any) => {
-        const { url } = req;
-        const key = Object.keys(proxies).find(([pathname, _]) => {
-          return url.indexOf(pathname) === 0;
-        });
-        if (!key || !proxies[key]) {
-          console.error("No proxy for pathname", url);
-          return;
-        }
-        proxies[key].upgrade?.(req, socket, head);
-      });
     },
   };
 };
