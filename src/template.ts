@@ -3,7 +3,6 @@ export const configTemplate = `{
   "hostname": "localhost",
   "routes": {
     "/game": "http://localhost:1234",
-    "/api": "http://localhost:8000",
     "/": "http://localhost:3001"
   }
 }
